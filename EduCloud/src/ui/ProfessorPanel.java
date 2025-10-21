@@ -18,6 +18,10 @@ public class ProfessorPanel extends JPanel {
     private final RaidSimulator raid = new RaidSimulator();
     private final DatabaseSimulator db = new DatabaseSimulator();
 
+
+    public void setTextFont(java.awt.Font font) {
+        outputArea.setFont(font);
+    }
     /**
      * Constructor for ProfessorPanel.
      * @param server LocalServer used to simulate client connections.

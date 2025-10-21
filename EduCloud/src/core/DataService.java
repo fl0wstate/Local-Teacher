@@ -25,9 +25,9 @@ public class DataService {
             try (FileWriter fw = new FileWriter(f, true)) {
                 fw.write(professor + "," + course + "," + material + "\n");
             }
-            System.out.println("📤 Material saved successfully!");
+            System.out.println("Material saved successfully!");
         } catch (IOException e) {
-            System.out.println("❌ Error saving material: " + e.getMessage());
+            System.out.println("Error saving material: " + e.getMessage());
         }
     }
 

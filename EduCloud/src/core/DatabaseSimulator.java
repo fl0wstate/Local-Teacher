@@ -10,6 +10,6 @@ public class DatabaseSimulator {
      * @param record record contents
      */
     public void insert(String table, String record) {
-        System.out.println("🗄️ INSERT INTO " + table + " VALUES('" + record + "')");
+        System.out.println("INSERT INTO " + table + " VALUES('" + record + "')");
     }
 }

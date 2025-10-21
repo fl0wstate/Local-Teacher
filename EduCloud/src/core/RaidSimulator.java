@@ -20,9 +20,9 @@ public class RaidSimulator {
                  OutputStream out = new FileOutputStream(dest)) {
                 in.transferTo(out);
             }
-            System.out.println("💾 Data mirrored to backup (RAID-1 simulation).");
+            System.out.println("Data mirrored to backup (RAID-1 simulation).");
         } catch (IOException e) {
-            System.out.println("⚠️ RAID mirroring failed: " + e.getMessage());
+            System.out.println("RAID mirroring failed: " + e.getMessage());
         }
     }
 }

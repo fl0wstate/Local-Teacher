@@ -14,8 +14,12 @@ public class StudentPanel extends JPanel {
     private JTextArea outputArea;
 
     private final DataService dataService = new DataService();
-    private final LlmAssistant ai = new LlmAssistant();
+    // private final LlmAssistant ai = new LlmAssistant();
 
+
+    public void setTextFont(java.awt.Font font) {
+        outputArea.setFont(font);
+    }
     /**
      * Constructor for StudentPanel.
      * @param server LocalServer instance to simulate student connection.
@@ -71,7 +75,7 @@ public class StudentPanel extends JPanel {
             }
         }
         // Simulated AI guidance appended to text area
-        String guidance = ai.generateGuidance(courseName, materials);
+        // String guidance = ai.generateGuidance(courseName, materials);
         outputArea.append("\n" + guidance + "\n");
     }
 }

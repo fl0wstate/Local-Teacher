@@ -14,7 +14,7 @@ public class LlmAssistant {
      */
     public String generateGuidance(String course, List<String> materials) {
         StringBuilder sb = new StringBuilder();
-        sb.append("🤖 LLM Guide for ").append(course).append(":\n");
+        sb.append("LLM Guide for ").append(course).append(":\n");
         if (materials.isEmpty()) {
             sb.append("No materials available to generate guidance.\n");
         } else {
