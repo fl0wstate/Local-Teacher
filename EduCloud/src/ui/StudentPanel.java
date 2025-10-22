@@ -76,6 +76,6 @@ public class StudentPanel extends JPanel {
         }
         // Simulated AI guidance appended to text area
         // String guidance = ai.generateGuidance(courseName, materials);
-        outputArea.append("\n" + guidance + "\n");
+        // outputArea.append("\n" + guidance + "\n");
     }
 }
